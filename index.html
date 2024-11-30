@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/sashika chamindi logo.PNG" width="192" height="60" class="sub-title" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="images">
+                <img src="images/my photo.png" class="girl" alt="Profile Photo">
+            </div>
+            <div class="detail">
+                <h1 class="animated-element">I'm Sashika<span> Chamindi</span></h1>
+                <p class="animated-element">This is my official portfolio website. You can get insight into 
+                    <br>my educational qualifications, skills, and experiences through this.
+                </p>
+            </div>
+
+
+            <audio id="styledAudio" autoplay loop controls>
+                <source src="Audio/my audio.opus" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+       </div>
+    </header>   
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <video width ="100" height="600" controls class="about-col-1" >
+                    <source src="Video/my video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="animated-element">Hello, I'm H.K. Sashika Chamindi, and I am a second-year undergraduate 
+                    studying Information and Communication Technology at the University of 
+                    Sri Jayawardenepura, Sri Lanka. I have a passion for trying new things. 
+                    Over the past year, my skills have become more refined, and I'm eager 
+                    to gain more experience by interacting with the field.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab(event, 'services')">Services</p>
+                        <p class="tab-links" onclick="openTab(event, 'background')">Background</p>
+                        <p class="tab-links" onclick="openTab(event, 'interests')">Interests</p>
+                        <p class="tab-links" onclick="openTab(event, 'future-goals')">Future-Goals</p>
+                    </div>
+                    <div id="services" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>UI/UX</span> Designing web/app interfaces</li>
+                            <li><span>Web Development</span> Web app development</li>
+                            <li><span>App Development</span> Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div id="background" class="tab-contents">
+                        <ul>
+                            <li><span>2019</span> Began exploring the field of Information Technology</li>
+                            <li><span>2021</span> Enrolled in ICT undergraduate program at University of Sri Jayawardenepura</li>
+                            <li><span>2023</span> Completed internships in web development and mobile application projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="interests" class="tab-contents">
+                        <ul>
+                            <li>Exploring emerging technologies in web and app development</li>
+                            <li>Engaging in cybersecurity and networking challenges</li>
+                            <li>Learning about UI/UX design trends to improve user experience</li>
+                            <li>Attending tech conferences and workshops to expand knowledge</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="future-goals" class="tab-contents">
+                        <ul>
+                            <li>Enhance skills in cybersecurity, especially penetration testing</li>
+                            <li>Complete certifications in advanced networking and ethical hacking</li>
+                            <li>Contribute to open-source projects in web and app development</li>
+                            <li>Expand knowledge in AI and machine learning for app development</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+    </section>
+
+    <!-- Education Section -->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">My Education</h1>
+            <div class="education-list">
+                <div class="certificate">
+                    <img src="images/certificate1.jpg" alt="Certificate 1">
+                    <div class="layer">
+                        <h3>Certificate in JavaScript</h3>
+                        <p>A comprehensive course covering HTML, CSS, and JavaScript fundamentals.</p>
+                        <a href="https://api2.sololearn.com/v2/certificates/CC-KNGQMWQS/image/png?t=638547314215120490"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/certificate2.jpg" alt="Certificate 2">
+                    <div class="layer">
+                        <h3>Certificate in Python</h3>
+                        <p>Focused on network security, ethical hacking, and risk management principles.</p>
+                        <a href="images/Python_for_Beginners_E-Certificate .pdf"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/certificate3.jpg" alt="Certificate 3">
+                    <div class="layer">
+                        <h3>Certificate in C#</h3>
+                        <p>Provided hands-on experience in data manipulation and visualization using Python.</p>
+                        <a href="https://api2.sololearn.com/v2/certificates/CC-NRUPBR73/image/png?t=638537661215773400"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/certificate4.jpg" alt="Certificate 4">
+                    <div class="layer">
+                        <h3>Certificate in American English</h3>
+                        <p>Trained in project planning, execution, and Agile methodologies.</p>
+                        <a href="images/experience2.jpg"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/sashika-chamindi-20b088312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn">See more</a>
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-to-home">Back to Home</a>
+        </div>
+    </div>
+    
+
+    <!-- Skills Section -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class='fas fa-code'></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visually appealing and 
+                        functional websites that provide a positive user experience. 
+                        It involves designing layouts, choosing colors, selecting 
+                        fonts, and incorporating images, videos, and graphics to 
+                        create an engaging interface. Good web design is responsive, 
+                        meaning it adapts well across devices like computers, tablets,
+                        and smartphones. It also focuses on usability, ensuring users
+                        can easily navigate the site and find information quickly. 
+                        Ultimately, web design combines aesthetics and functionality 
+                        to deliver a site that meets the needs of both the business and its users.</p>
+                        <a href="images/web design.jpg">Learn more</a>
+                </div>
+                <div>
+                    <i class='fas fa-crop-alt'></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        UI/UX design focuses on creating user-friendly and visually 
+                        appealing digital experiences. UI (User Interface) design 
+                        emphasizes the look, layout, and interactive elements of 
+                        a product, ensuring it is aesthetically pleasing and easy 
+                        to navigate. UX (User Experience) design, on the other hand, 
+                        centers on the overall feel and usability, aiming to create 
+                        seamless, efficient, and enjoyable interactions for users. 
+                        Together, UI and UX design shape products that not only look 
+                        great but are also intuitive and engaging, enhancing user 
+                        satisfaction and accessibility.</p>
+                        <a href="images/UI UX design.jpg">Learn more</a>
+                </div>
+                <div>
+                    <i class='fas fa-app-store'></i>
+                    <h2>App Design</h2>
+                    <p>App design is the process of creating the look, feel, and 
+                    functionality of a mobile or web application. It involves 
+                    planning the user interface (UI) to make navigation intuitive, 
+                    visually appealing, and responsive across devices, as well as 
+                    considering the user experience (UX) to ensure the app is easy 
+                    to use and meets user needs. Good app design balances aesthetics 
+                    with functionality, using consistent layouts, colors, and icons 
+                    to make the app both engaging and efficient for users.</p>
+                    <a href="images/app design.jpg">Learn more</a>
+                </div>
+            </div>
+        </div>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+     </div>
+     <!-- Projects section -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/online shopping app.png" alt="Online shopping app">
+                <div class="layer">
+                    <h3>Online shopping app</h3>
+                    <p>An online shopping app is a mobile platform that allows users
+                        to browse, search, and purchase products directly from their 
+                        smartphones or tablets.</p>
+                    <a href="https://www.youtube.com/shorts/nea2lYi-zzs?feature=share"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/music app.png" alt="Music app">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>A music app is a digital platform that allows users to listen to, 
+                       discover, and enjoy a wide range of music genres on their devices.</p>
+                    <a href="https://www.youtube.com/shorts/bVEU1EExHX0?feature=share"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/social media app.png" alt="Social media app">
+                <div class="layer">
+                    <h3>Social media app</h3>
+                    <p>A social media app is a digital platform that enables users to 
+                        connect, communicate, and share content with friends, family, 
+                        and a wider online community. </p>
+                    <a href="https://www.youtube.com/shorts/LY1CJtwHH-U?feature=share"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://drive.google.com/file/d/1ZSUbJazQT4Un3znmnFHVdGXLqVmcNm-o/view?usp=drive_link" class="btn">See more</a>
+    </div>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+</div>
+
+
+<!-- Experience section -->
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="experience-list">
+            <div class="experience">
+                <img src="images/experience3.jpg" alt="Cybersecurity Internship">
+                <div class="layer">
+                    <h3>Cybersecurity Internship</h3>
+                    <p>Worked as a cybersecurity intern where I assisted in network monitoring, 
+                       vulnerability assessment, and implementing security best practices to protect
+                       sensitive data.</p>
+                    <a href="https://www.youtube.com/watch?v=ERtCzoaKft8&pp=ygUjY29kZWFscGhhIGN5YmVyIHNlY3VyaXR5IGludGVybnNoaXA%3D"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="images/experience1.jpg" alt="Organizing Committee - ElectroCombat 2024">
+                <div class="layer">
+                    <h3>Organizing Committee - ElectroCombat 2024</h3>
+                    <p>Thrilled to have been a part of the organizing committee for ElectroCombat 2024,
+                       where I contributed to event planning, coordination, and overall management to
+                       ensure a successful experience for all participants.</p>
+                    <a href="https://drive.google.com/file/d/1frDCa9RCU689s3yPoToI8e2d4DgZhitb/view?usp=drive_link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="images/experience2.jpg" alt="American English Expertise">
+                <div class="layer">
+                    <h3>American English Expertise</h3>
+                    <p>Experienced in American English, including language nuances, spelling, and grammar,
+                       with a focus on clear and effective communication for diverse audiences.</p>
+                    <a href="https://drive.google.com/file/d/1i9f6sGHXvZn_bOvOffS-PHg4b3meiIgg/view?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="images/experience4.jpg" alt="Research Collaboration with U.S. Embassy">
+                <div class="layer">
+                    <h3>Research Collaboration with U.S. Embassy, Sri Lanka</h3>
+                    <p>Conducted an academic research project in collaboration with the U.S. Embassy, 
+                       focusing on leveraging library resources and scholarly frameworks to deliver 
+                       evidence-based findings. Worked on data collection, analysis, and reporting, while 
+                       strengthening cross-cultural collaboration and contributing to initiatives that bridged 
+                       local insights with global perspectives.</p>
+                    <a href="https://drive.google.com/file/d/1JKvWN6rB2Fr19VbnqRSGaT7fsYfPccYr/view?usp=drive_link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>            
+        </div>
+        <a href="https://drive.google.com/file/d/1M9jyWdtrG1Bxyxt5BJycFXUtn_h48noR/view?usp=drive_link"  class="btn">See more</a>
+    </div>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1><br/>
+                <p><i class="fas fa-paper-plane "></i> sashikachamindi2003@gmail.com</p><br/>
+                <p><i class="fas fa-phone-square-alt "></i> 0764324723</p>
+                <div class="social-icons">
+                    <a href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/sashika-chamindi-20b088312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://telegram.com/"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.youtube.com/@sashikachamindi2602/"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a> 
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="design">
+        <p class="sub-title">Designed with <i class="fa fa-heart"></i> by H.K. Sashika Chamindi</p>
+    </div>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+</div>
+
+
+<script>
+    function openTab(event, tabName) {
+        // Remove 'active-tab' and 'active-link' from all tab contents and links
+        let tabContents = document.getElementsByClassName("tab-contents");
+        for (let tab of tabContents) {
+            tab.classList.remove("active-tab");
+        }
+        
+        let tabLinks = document.getElementsByClassName("tab-links");
+        for (let link of tabLinks) {
+            link.classList.remove("active-link");
+        }
+        
+        // Add 'active-tab' to the selected tab content and 'active-link' to clicked tab link
+        document.getElementById(tabName).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxrKK57mQpavA1E0uRd-8RDXcfkyaGLWeA89m_MIfSwSTiN-CPacZsKV08I-nHYKYiX0g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+});
+</script>
+
+</body>
+</html>
